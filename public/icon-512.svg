@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<rect width="512" height="512" fill="white"/>
-<g transform="translate(120 55) rotate(-12)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#a23b9b"/></g>
-<g transform="translate(225 155) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#1c9ed8"/></g>
-<g transform="translate(330 95) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#f6c400"/></g>
-<g transform="translate(390 205) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#77b82a"/></g>
-<g transform="translate(300 250) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#df252d"/></g>
-<text x="256" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="92" font-weight="900" fill="#111">WIKAS</text>
-<text x="256" y="433" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-style="italic" fill="#111">Company of <tspan fill="#18a9d1" font-weight="700">Sakal</tspan> Media Group</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#fff"/><g transform="translate(112 48) rotate(-28 144 82)"><rect x="0" y="0" width="72" height="92" rx="10" fill="#9d2a91"/><rect x="78" y="76" width="72" height="92" rx="10" fill="#159ed4"/><rect x="156" y="-8" width="72" height="92" rx="10" fill="#ffd500"/><rect x="234" y="76" width="72" height="92" rx="10" fill="#e62b2b"/><rect x="312" y="18" width="72" height="92" rx="10" fill="#84c52b"/></g><text x="256" y="330" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="94" font-weight="900" letter-spacing="-5" fill="#151515">WIKAS</text><text x="256" y="374" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-style="italic" fill="#151515">Company of <tspan fill="#18a9d5" font-weight="700">Sakal</tspan> Media Group</text></svg>
