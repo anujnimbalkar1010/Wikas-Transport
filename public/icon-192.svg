@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 512 512"><rect width="512" height="512" fill="#fff"/><g transform="translate(245 95) rotate(-28)"><rect width="74" height="96" rx="12" fill="#9b2b91"/><rect x="82" y="96" width="74" height="96" rx="12" fill="#129fd5"/><rect x="164" y="14" width="74" height="96" rx="12" fill="#ffd500"/><rect x="246" y="100" width="74" height="96" rx="12" fill="#e72b2b"/><rect x="328" y="28" width="74" height="96" rx="12" fill="#83c52b"/></g><text x="256" y="340" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="92" font-weight="900" letter-spacing="-5" fill="#151515">WIKAS</text><text x="256" y="385" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-style="italic" fill="#171717">Company of <tspan fill="#18a9d5" font-weight="700">Sakal</tspan> Media Group</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="white"/>
+<g transform="translate(120 55) rotate(-12)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#a23b9b"/></g>
+<g transform="translate(225 155) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#1c9ed8"/></g>
+<g transform="translate(330 95) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#f6c400"/></g>
+<g transform="translate(390 205) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#77b82a"/></g>
+<g transform="translate(300 250) rotate(-32)"><rect x="0" y="0" width="105" height="145" rx="18" fill="#df252d"/></g>
+<text x="256" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="92" font-weight="900" fill="#111">WIKAS</text>
+<text x="256" y="433" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-style="italic" fill="#111">Company of <tspan fill="#18a9d1" font-weight="700">Sakal</tspan> Media Group</text>
+</svg>
