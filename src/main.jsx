@@ -1,7 +1,7 @@
 import React,{useEffect,useState}from'react';import{createRoot}from'react-dom/client';import * as XLSX from 'xlsx';import'./style.css';import'./splash.css';
 const API='https://tdwxcusfigumrcztwedq.supabase.co/functions/v1/wikas-transport';
 const CLOUD_NAME='gwokuh9g', UPLOAD_PRESET='WIKAS_TRANSPORT';
-const TRUCK_NUMBERS=['111','1212','MH 12 AA 1212','MH 12 NJ 5644','MH 12 WJ 2835','MH12WJ1222'];
+const TRUCK_NUMBERS=['MH 12 AU 0448','MH 12 FC 7688','MH 12 FZ 3889','MH 12 FZ 3890','MH 12 EF 1100','MH 12 HD 1993','MH 12 KP 0509','MH 12 KP 0510','MH 12 LT 4874','MH 12 LT 4980','MH 12 MV 0949','MH 12 MV 0952','MH 12 WJ 2835','MH 12 WJ 2836','MH 12 ZE 0985','MH 12 CH 2200','MH 12 NJ 5644'];
 async function uploadCloudinary(file, truck, kind){
  if(!file)return '';
  const fd=new FormData();
