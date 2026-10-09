@@ -6,7 +6,7 @@ async function uploadCloudinary(file, truck, kind){
  const fd=new FormData();
  fd.append('file',file);
  fd.append('upload_preset',UPLOAD_PRESET);
- fd.append('folder',`wikas_transport/${truck}/${kind}`);
+ fd.append('folder',`Wikas_Transport/${truck}/${kind}`);
  const r=await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,{method:'POST',body:fd});
  const x=await r.json();
  if(!r.ok||!x.secure_url)throw Error(x.error?.message||'Cloudinary photo upload failed');
