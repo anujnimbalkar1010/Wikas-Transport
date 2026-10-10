@@ -13,3 +13,5 @@ h2{margin:0 0 24px;color:#123e72;font-size:28px}.grid{display:grid;grid-template
 .driver-option{width:100%;text-align:left;background:#fff;color:#12355b;border:1px solid #d8eaff;box-shadow:none;padding:11px 12px;font-size:14px;border-radius:8px}
 .driver-option:hover{background:#e3f1ff;color:#0757a8}
 .other-option{background:#e8f3ff;color:#0757a8}
+
+.driver-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:8px}.driver-option.selected{background:#0878e8;color:#fff;border-color:#0878e8}.driver-options .driver-option{min-width:0;white-space:normal}@media(max-width:800px){.driver-options{grid-template-columns:1fr}}
