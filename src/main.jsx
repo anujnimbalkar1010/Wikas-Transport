@@ -3,7 +3,7 @@ const API='https://tdwxcusfigumrcztwedq.supabase.co/functions/v1/wikas-transport
 const CLOUD_NAME='gwokuh9g', UPLOAD_PRESET='WIKAS_TRANSPORT';
 const formatDateTime=value=>{if(!value)return '';const d=new Date(value);return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()} ${d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`};
 const TRUCK_NUMBERS=['MH 12 AU 0448','MH 12 FC 7688','MH 12 FZ 3889','MH 12 FZ 3890','MH 12 EF 1100','MH 12 HD 1993','MH 12 KP 0509','MH 12 KP 0510','MH 12 LT 4874','MH 12 LT 4980','MH 12 MV 0949','MH 12 MV 0952','MH 12 WJ 2835','MH 12 WJ 2836','MH 12 ZE 0985','MH 12 CH 2200','MH 12 NJ 5644'];
-const DRIVER_NAMES=["Shivaji Dhasade","Bhimaji Wagh","Rajendra Dhaygude","Rafik Pathan","Sharad Jadhav","Hamid Mujawar","Madhukar Bodke","Dnyadeo Dhaygude","Vijay Pawar","Shekhar Pawar","Pradip Pawar","Vikram Linge","Prashant Pawar","SKN"];
+const DRIVER_NAMES=["/ शिवाजी धसाडे","/ भीमाजी वाघ","/ राजेंद्र धायगुडे","/ रफिक पठाण","/ शरद जाधव","/ हमीद मुजावर","/ मधुकर बोडके","/ ज्ञानदेव धायगुडे","/ विजय पवार","/ शेखर पवार","/ प्रदीप पवार","/ विक्रम लिंगे","/ प्रशांत पवार","/ SKN"];
 async function uploadCloudinary(file, truck, kind){
  if(!file)return '';
  const fd=new FormData();
