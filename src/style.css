@@ -11,3 +11,11 @@ h2{margin:0 0 24px;color:#123e72;font-size:28px}.grid{display:grid;grid-template
 .driver-select{display:block!important;width:100%!important;height:48px!important;min-height:48px!important;appearance:auto!important;-webkit-appearance:menulist!important;background:#fff!important;color:#12355b!important;border:1px solid #b8cde5!important;border-radius:10px!important;padding:0 13px!important;font-size:15px!important;font-weight:700!important;cursor:pointer!important}
 
 .payment-choice{grid-column:1/-1;border:1px solid #b8d4f5;border-radius:12px;padding:12px 14px 14px;margin:0;background:#f8fbff;min-width:0}.payment-choice legend{font-weight:800;font-size:14px;padding:0 5px;color:#12355b}.payment-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.payment-option{display:flex!important;align-items:center;justify-content:center;gap:10px;padding:14px 12px;border:2px solid #cbd5e1;border-radius:10px;background:#fff;cursor:pointer;font-weight:800;color:#12355b}.payment-option.selected{border-color:#2563eb;background:#eaf3ff;color:#174ea6}.payment-option input{width:18px!important;height:18px;accent-color:#2563eb;margin:0}.payment-option span{font-size:15px}@media(max-width:520px){.payment-options{grid-template-columns:1fr 1fr}.payment-option{padding:12px 6px;font-size:13px}}
+
+
+/* Make photo upload controls clearer and easier to tap on phones */
+.upload input[type="file"]{display:block;width:100%;max-width:100%;min-width:0;margin-top:4px;font-size:14px;color:#315a86;cursor:pointer}
+.upload input[type="file"]::file-selector-button{border:0;border-radius:8px;background:#0878e8;color:#fff;padding:10px 14px;margin:0 10px 0 0;font-size:13px;font-weight:800;cursor:pointer}
+.upload input[type="file"]::-webkit-file-upload-button{border:0;border-radius:8px;background:#0878e8;color:#fff;padding:10px 14px;margin:0 10px 0 0;font-size:13px;font-weight:800;cursor:pointer}
+.upload input[type="file"]::file-selector-button:hover,.upload input[type="file"]::-webkit-file-upload-button:hover{background:#056bd0}
+.upload{gap:10px;overflow:hidden;word-break:break-word}
