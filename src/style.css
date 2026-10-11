@@ -24,3 +24,10 @@ h2{margin:0 0 24px;color:#123e72;font-size:28px}.grid{display:grid;grid-template
 .grid select[name="petrolPump"]{display:block!important;appearance:auto!important;-webkit-appearance:menulist!important;width:100%!important;min-width:0!important;height:48px!important;min-height:48px!important;background:#fff!important;color:#12355b!important;border:2px solid #247be8!important;border-radius:10px!important;padding:0 12px!important;font-size:15px!important;font-weight:700!important;cursor:pointer!important;opacity:1!important;visibility:visible!important;position:relative!important;z-index:1!important}
 .grid label:has(select[name="petrolPump"]){display:flex!important;flex-direction:column!important;gap:8px!important;min-width:0!important}
 .grid select[name="petrolPump"]:focus{outline:3px solid rgba(36,123,232,.18)!important}
+
+/* Strongly visible petrol-pump dropdown on desktop and mobile */
+.petrol-pump-field{display:flex!important;flex-direction:column!important;gap:8px!important;min-width:0!important}
+.select-wrap{display:block!important;position:relative!important;width:100%!important;min-width:0!important}
+.petrol-pump-select{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%!important;min-width:0!important;height:52px!important;min-height:52px!important;padding:0 42px 0 14px!important;border:2px solid #0878e8!important;border-radius:11px!important;background:#fff!important;color:#12355b!important;font-size:15px!important;font-weight:800!important;line-height:normal!important;appearance:auto!important;-webkit-appearance:menulist!important;cursor:pointer!important;box-shadow:0 0 0 2px rgba(8,120,232,.08)!important}
+.petrol-pump-select option{background:#fff!important;color:#12355b!important;font-size:15px!important;font-weight:700!important}
+@media(max-width:800px){.petrol-pump-select{height:54px!important;min-height:54px!important;font-size:16px!important}}
