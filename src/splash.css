@@ -131,7 +131,7 @@
 
 /* Opening animation matched to the supplied six-frame reference */
 .brand-tiles{height:112px!important;width:260px!important;margin-bottom:0!important;animation:none!important;position:relative}
-.tile{opacity:0!important;animation:tileFlyIn .9s cubic-bezier(.16,1,.3,1) forwards!important;will-change:transform,opacity}
+.tile{animation:tileFlyIn .9s cubic-bezier(.16,1,.3,1) forwards!important;will-change:transform,opacity}
 .tile.purple{--from-x:-145px;--from-y:-130px;animation-delay:.05s!important}
 .tile.blue{--from-x:-155px;--from-y:100px;animation-delay:.18s!important}
 .tile.yellow{--from-x:145px;--from-y:-120px;animation-delay:.3s!important}
@@ -171,3 +171,14 @@
 .splash-waves:after{height:88px!important;bottom:-35px!important;background:linear-gradient(170deg,rgba(42,128,212,.06),rgba(80,177,243,.24))!important;border-radius:50% 50% 0 0!important}
 @keyframes dotPulse{0%,100%{transform:scale(.85);opacity:.55}50%{transform:scale(1.12);opacity:1}}
 @media(max-width:600px){.brand-tiles{transform:scale(.72)!important;margin-bottom:-9px!important}.splash-wordmark .wikas-custom-logo{width:72vw!important;max-width:390px!important}.brand-company{font-size:clamp(12px,3.5vw,16px)!important}.splash-loading-dots{margin-top:43px;gap:9px}}
+
+
+/* Fix tile entrance: allow keyframe opacity to animate instead of forcing tiles invisible */
+.tile{opacity:0;animation:tileFlyIn .9s cubic-bezier(.16,1,.3,1) forwards!important}
+.brand-tiles{overflow:visible!important}
+.splash{justify-content:center!important}
+.brand-reveal{gap:0!important}
+.splash-wordmark .wikas-custom-logo{display:block!important;opacity:0;animation:logoReveal 1s 1.45s cubic-bezier(.16,1,.3,1) both!important}
+.brand-company{opacity:0;animation:captionIn .65s 1.85s ease-out both!important}
+.splash-loading-dots{opacity:0;animation:captionIn .45s 2.35s ease-out both!important}
+@media(prefers-reduced-motion:reduce){.tile,.splash-wordmark,.splash-wordmark .wikas-custom-logo,.brand-company,.splash-loading-dots{animation-duration:.01ms!important;animation-delay:0ms!important;opacity:1!important}}
