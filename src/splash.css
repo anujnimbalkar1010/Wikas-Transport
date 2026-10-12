@@ -123,3 +123,7 @@
 
 /* Final wordmark correction: match the user's exact WIKAS lettering reference */
 .splash-wordmark strong{background-image:url('/wikas-wordmark-exact.svg')!important;background-position:center!important;background-size:contain!important;background-repeat:no-repeat!important;aspect-ratio:701/158!important}
+
+/* Slightly smaller WIKAS wordmark while preserving its original lettering */
+.splash-wordmark .wikas-custom-logo{width:min(82vw,440px)!important;max-width:440px!important}
+@media(max-width:600px){.splash-wordmark .wikas-custom-logo{width:82vw!important;max-width:440px!important}}
