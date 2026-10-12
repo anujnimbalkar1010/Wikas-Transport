@@ -120,3 +120,6 @@
 
 /* Use the angular custom WIKAS wordmark traced from the user's supplied logo */
 .splash-wordmark strong{display:block!important;width:min(94vw,500px);aspect-ratio:710/150;height:auto;font-size:0!important;line-height:0!important;color:transparent!important;letter-spacing:0!important;background:url('/wikas-wordmark.svg') center/contain no-repeat!important;flex:none}
+
+/* Final wordmark correction: match the user's exact WIKAS lettering reference */
+.splash-wordmark strong{background-image:url('/wikas-wordmark-exact.svg')!important;background-position:center!important;background-size:contain!important;background-repeat:no-repeat!important;aspect-ratio:701/158!important}
