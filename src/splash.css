@@ -44,3 +44,28 @@
 .splash-waves:after{background:linear-gradient(100deg,rgba(23,105,189,.08),rgba(35,136,232,.13) 55%,rgba(89,183,247,.07));animation:waveDrift 5.5s ease-in-out infinite alternate-reverse}
 @keyframes splashFade{0%,91%{opacity:1}100%{opacity:0;visibility:hidden;pointer-events:none}}
 @media(max-width:600px){.brand-tiles{transform:scale(.78);margin-bottom:-6px}.splash-logo{width:96vw}.splash-logo header{min-height:78px}.splash-logo header:before{height:78px}.brand-company{font-size:clamp(13px,3.6vw,20px)}.brand-transport{letter-spacing:1.8px}}
+
+/* Reference-inspired WIKAS splash: animated prism tiles, wordmark and loading bar */
+.splash{background:radial-gradient(ellipse at 50% 40%,#fff 0%,#f5fbff 47%,#dceeff 100%);animation:splashFade 5.2s ease forwards}
+.splash-lasers{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.45;background:repeating-linear-gradient(132deg,transparent 0 82px,rgba(75,190,255,.42) 83px,rgba(255,255,255,.9) 85px,transparent 87px 160px),repeating-linear-gradient(48deg,transparent 0 112px,rgba(223,92,255,.28) 113px,rgba(255,255,255,.85) 115px,transparent 117px 205px);mask-image:radial-gradient(ellipse at center,black 0%,transparent 76%);animation:laserShift 5.2s ease-in-out infinite alternate}
+.brand-reveal{gap:0;animation:brandSettle 4.7s cubic-bezier(.16,1,.3,1) both}
+.brand-tiles{height:106px;width:260px;margin-bottom:5px;transform:scale(.94);filter:drop-shadow(0 10px 16px rgba(28,60,105,.13))}
+.tile{width:55px;height:55px;border-radius:9px}
+.tile.purple{left:31px;top:4px;background:linear-gradient(135deg,#ec71d9,#7f1d83)}
+.tile.blue{left:83px;top:43px;background:linear-gradient(135deg,#43d9ff,#0870c6)}
+.tile.yellow{left:137px;top:8px;background:linear-gradient(135deg,#fff96a,#ffad00)}
+.tile.red{left:177px;top:48px;background:linear-gradient(135deg,#ff7777,#d80c2b)}
+.tile.green{left:211px;top:28px;width:45px;height:45px;background:linear-gradient(135deg,#e1ff70,#55a90d)}
+.brand-wordmark{display:flex;flex-direction:column;align-items:center;position:relative;z-index:2;min-width:min(90vw,440px);padding:4px 16px 8px;background:rgba(255,255,255,.72);backdrop-filter:blur(5px);border-radius:3px;animation:logoReveal 1.2s .55s cubic-bezier(.16,1,.3,1) both}
+.brand-wordmark strong{font-family:Arial,Helvetica,sans-serif;font-size:clamp(42px,9vw,68px);line-height:.98;letter-spacing:-2px;color:#111;font-weight:900}
+.brand-wordmark b{font-family:Arial,Helvetica,sans-serif;font-size:clamp(11px,2.5vw,16px);line-height:1.5;color:#242424;font-weight:800}
+.brand-wordmark em{font-family:Georgia,serif;font-size:clamp(12px,2.7vw,16px);line-height:1.4;color:#333;font-weight:600}
+.brand-company,.brand-divider,.brand-transport{display:none!important}
+.splash-loading{display:flex!important;flex-direction:column;align-items:center;gap:9px;position:absolute;z-index:3;top:calc(50% + 170px);width:min(210px,58vw);animation:captionIn .6s 1.3s ease-out both}
+.loading-text{font-size:14px;letter-spacing:.2px;color:#30343b}
+.loading-track{width:100%;height:7px;border-radius:99px;border:1px solid #aab8c7;background:rgba(255,255,255,.72);overflow:hidden;box-shadow:0 2px 7px #5d9cc522}
+.loading-track span{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#9e48b5,#16a9e8,#ffe02e,#ee5476);animation:loadProgress 4.8s ease-out forwards;box-shadow:0 0 9px #58b9ed99}
+.splash-waves{height:19vh;opacity:.55}
+@keyframes laserShift{from{transform:translateX(-1.5%) scale(1);opacity:.25}to{transform:translateX(1.5%) scale(1.04);opacity:.65}}
+@keyframes loadProgress{0%{width:0}25%{width:30%}60%{width:62%}85%{width:84%}100%{width:100%}}
+@media(max-width:600px){.brand-tiles{transform:scale(.84);margin-bottom:-3px}.brand-wordmark{min-width:84vw;padding:5px 8px 7px}.brand-wordmark strong{font-size:clamp(42px,12vw,58px)}.brand-wordmark b{font-size:clamp(10px,2.8vw,13px)}.brand-wordmark em{font-size:clamp(11px,3vw,14px)}.splash-loading{top:calc(50% + 145px);width:56vw}.splash-lasers{opacity:.32}}
