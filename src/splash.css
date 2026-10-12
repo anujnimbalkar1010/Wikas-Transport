@@ -104,3 +104,20 @@
 .splash-waves:before{height:130px;bottom:-76px;background:linear-gradient(110deg,rgba(22,119,232,.07),rgba(65,170,245,.19));animation:waveDrift 6s ease-in-out infinite alternate}
 .splash-waves:after{height:100px;bottom:-76px;background:linear-gradient(100deg,rgba(23,105,189,.08),rgba(35,136,232,.14) 55%,rgba(89,183,247,.08));animation:waveDrift 4.8s ease-in-out infinite alternate-reverse}
 @media(max-width:600px){.brand-tiles{transform:scale(.82);margin-bottom:-2px}.splash-logo{width:96vw}.splash-logo header{min-height:82px}.splash-logo header:before{height:82px}.brand-divider{margin:10px 0 8px}.splash-waves{height:22vh}.brand-company{font-size:clamp(13px,3.6vw,20px)}}
+
+/* ALTERNATE DESIGN PREVIEW: midnight blue corporate reveal */
+.splash{background:radial-gradient(ellipse at 50% 43%,#193e67 0%,#0a1b31 48%,#050b15 100%)!important;color:#fff}
+.splash:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(0,170,255,.19),transparent 40%),radial-gradient(circle at 15% 75%,rgba(177,55,195,.12),transparent 30%);filter:blur(10px);animation:nightGlow 4.8s ease-in-out infinite alternate}
+.splash-top-glow{top:25%;box-shadow:0 0 55px 18px rgba(37,161,255,.32)!important}
+.brand-reveal{position:relative;z-index:2}
+.brand-tiles{filter:drop-shadow(0 0 20px rgba(54,175,255,.22))!important}
+.tile{box-shadow:0 0 22px rgba(74,175,255,.22),inset 0 1px 4px #ffffffc9!important}
+.splash-logo{filter:drop-shadow(0 0 24px rgba(82,176,255,.19))!important}
+.brand-company{color:#f5f9ff!important;text-shadow:0 2px 16px #53b8ff33}
+.brand-company span{color:#5bd3ff!important}
+.brand-divider{background:linear-gradient(90deg,transparent,#5bd3ff,transparent)!important;box-shadow:0 0 12px #43baff66}
+.brand-transport{color:#a9dfff!important;letter-spacing:3px!important;text-shadow:0 0 16px #2e9bff44}
+.splash-waves{opacity:.8!important}
+.splash-waves:before{background:linear-gradient(110deg,rgba(15,119,230,.13),rgba(30,182,255,.2))!important}
+.splash-waves:after{background:linear-gradient(100deg,rgba(71,72,213,.13),rgba(24,159,239,.22),rgba(89,183,247,.12))!important}
+@keyframes nightGlow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.08)}}
