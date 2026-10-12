@@ -117,3 +117,6 @@
 .splash-wordmark strong{display:none!important}
 .splash-wordmark b{margin-top:7px!important;font-size:clamp(11px,2.6vw,17px)!important;letter-spacing:.2px!important}
 @media(max-width:600px){.splash-wordmark .wikas-custom-logo{width:94vw;max-width:500px}.splash-wordmark b{font-size:clamp(10px,3vw,14px)!important}}
+
+/* Use the angular custom WIKAS wordmark traced from the user's supplied logo */
+.splash-wordmark strong{display:block!important;width:min(94vw,500px);aspect-ratio:710/150;height:auto;font-size:0!important;line-height:0!important;color:transparent!important;letter-spacing:0!important;background:url('/wikas-wordmark.svg') center/contain no-repeat!important;flex:none}
