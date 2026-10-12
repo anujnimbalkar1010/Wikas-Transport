@@ -1,24 +1,25 @@
-.splash{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,#fff 0%,#f7fbff 52%,#edf5ff 100%);overflow:hidden;animation:splashFade 2.6s ease-in-out forwards}
-.splash:before,.splash:after{content:"";position:absolute;border-radius:50%;pointer-events:none;filter:blur(8px)}
-.splash:before{width:420px;height:420px;top:-250px;left:-180px;background:radial-gradient(circle,rgba(35,132,226,.15),rgba(35,132,226,0) 70%);animation:orbFloat 7s ease-in-out infinite alternate}
-.splash:after{width:500px;height:500px;bottom:-340px;right:-220px;background:radial-gradient(circle,rgba(23,83,158,.12),rgba(23,83,158,0) 70%);animation:orbFloat 8s ease-in-out infinite alternate-reverse}
-.splash-logo{width:min(900px,94vw);position:relative;z-index:2;animation:logoIn .9s cubic-bezier(.2,.75,.25,1) both;filter:drop-shadow(0 5px 14px rgba(18,70,130,.07))}
+.splash{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;overflow:hidden;animation:splashFade 3.5s cubic-bezier(.4,0,.2,1) forwards}
+.splash:before,.splash:after{content:"";position:absolute;border-radius:50%;pointer-events:none;filter:blur(10px)}
+.splash:before{width:420px;height:420px;top:-250px;left:-180px;background:radial-gradient(circle,rgba(35,132,226,.13),rgba(35,132,226,0) 70%);animation:orbFloat 7s ease-in-out infinite alternate}
+.splash:after{width:500px;height:500px;bottom:-340px;right:-220px;background:radial-gradient(circle,rgba(23,83,158,.1),rgba(23,83,158,0) 70%);animation:orbFloat 8s ease-in-out infinite alternate-reverse}
+.splash-logo{width:min(900px,94vw);position:relative;z-index:2;filter:drop-shadow(0 5px 14px rgba(18,70,130,.07));animation:logoReveal 1.45s cubic-bezier(.16,1,.3,1) both}
 .splash-logo header{min-height:150px;border:0;box-shadow:none;background:transparent;padding:0}
-.splash-logo header:before{height:130px}
-.splash-loading{position:relative;z-index:3;margin-top:25px;text-align:center;color:#16477f;animation:loadingIn .65s .18s both}
+.splash-logo header:before{height:130px;animation:logoGlow 1.4s ease-out both}
+.splash-loading{position:relative;z-index:3;margin-top:25px;text-align:center;color:#16477f;animation:loadingIn .65s .65s both}
 .loader-ring{width:30px;height:30px;margin:0 auto 13px;border:2.5px solid rgba(22,119,232,.13);border-top-color:#1677e8;border-right-color:#58b7f6;border-radius:50%;animation:spin .9s linear infinite}
 .loading-text{font-size:13px;font-weight:700;letter-spacing:2.6px;text-transform:uppercase}
 .loading-text:after{content:"";display:inline-block;width:18px;text-align:left;animation:dots 1.1s steps(4,end) infinite}
 .splash-waves{display:block;position:absolute;z-index:1;left:-10%;bottom:-2px;width:120%;height:150px;pointer-events:none;overflow:hidden}
 .splash-waves:before,.splash-waves:after{content:"";position:absolute;left:-5%;width:110%;border-radius:50% 50% 0 0}
-.splash-waves:before{height:130px;bottom:-62px;background:linear-gradient(110deg,rgba(22,119,232,.2),rgba(65,170,245,.34));animation:waveDrift 6s ease-in-out infinite alternate}
+.splash-waves:before{height:130px;bottom:-62px;background:linear-gradient(110deg,rgba(22,119,232,.16),rgba(65,170,245,.3));animation:waveDrift 6s ease-in-out infinite alternate}
 .splash-waves:after{height:105px;bottom:-68px;background:linear-gradient(100deg,#1769bd,#2388e8 55%,#59b7f7);animation:waveDrift 4.8s ease-in-out infinite alternate-reverse}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes logoIn{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes loadingIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes logoReveal{0%{opacity:0;transform:translateY(24px) scale(.94);clip-path:inset(0 0 100% 0)}55%{opacity:1;clip-path:inset(0 0 0 0)}75%{transform:translateY(-3px) scale(1.012)}100%{opacity:1;transform:translateY(0) scale(1);clip-path:inset(0 0 0 0)}}
+@keyframes logoGlow{0%{filter:brightness(1.7);transform:scale(.96)}55%{filter:brightness(1.08);transform:scale(1.01)}100%{filter:brightness(1);transform:scale(1)}}
+@keyframes loadingIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes orbFloat{from{transform:translate3d(0,0,0)}to{transform:translate3d(14px,10px,0)}}
 @keyframes waveDrift{from{transform:translateX(-2%) translateY(3px)}to{transform:translateX(2%) translateY(-7px)}}
 @keyframes dots{0%{content:""}25%{content:"."}50%{content:".."}75%,100%{content:"..."}}
-@keyframes splashFade{0%,78%{opacity:1}100%{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes splashFade{0%,82%{opacity:1}100%{opacity:0;visibility:hidden;pointer-events:none}}
 @media(max-width:600px){.splash-logo{width:96vw}.splash-logo header{min-height:120px}.splash-logo header:before{height:105px}.splash-loading{margin-top:19px}.splash-waves{height:125px}.splash-waves:before{height:110px}.splash-waves:after{height:90px}.loading-text{font-size:12px;letter-spacing:2px}}
-@media(prefers-reduced-motion:reduce){.splash,.splash-logo,.splash-loading,.loader-ring,.splash-waves:before,.splash-waves:after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@media(prefers-reduced-motion:reduce){.splash,.splash-logo,.splash-loading,.loader-ring,.splash-waves:before,.splash-waves:after,.splash-logo header:before{animation-duration:.01ms!important;animation-iteration-count:1!important}}
