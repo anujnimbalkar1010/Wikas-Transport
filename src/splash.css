@@ -145,3 +145,29 @@
 .brand-tiles:after{content:"";position:absolute;inset:-28px -40px;pointer-events:none;border:1px solid rgba(255,255,255,0);border-radius:50%;animation:logoHalo 1s 1.05s ease-out both}
 @keyframes logoHalo{0%{transform:scale(.5);opacity:0;border-color:rgba(255,255,255,0)}35%{opacity:.9;border-color:rgba(255,255,255,.9)}100%{transform:scale(1.18);opacity:0;border-color:rgba(105,185,245,.1)}}
 @media(max-width:600px){.brand-tiles{transform:scale(.82);margin-bottom:-2px!important}.splash-wordmark .wikas-custom-logo{width:72vw!important;max-width:390px!important}}
+
+
+/* Reference layout: WIKAS logo + Company of Sakal Media Group + four blue dots */
+.splash{background:linear-gradient(180deg,#f8fbff 0%,#fff 55%,#edf7ff 100%)!important}
+.splash-top-glow{display:none!important}
+.splash:before{display:none!important}
+.splash:after{display:none!important}
+.brand-reveal{position:relative;z-index:2;transform:none}
+.brand-tiles{margin-bottom:0!important}
+.splash-wordmark{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;padding:0!important;width:min(92vw,520px)!important;min-width:0!important;margin-top:0!important}
+.splash-wordmark .wikas-custom-logo{width:min(72vw,390px)!important;max-width:390px!important;height:auto!important}
+.splash-wordmark b{display:none!important}
+.brand-company{display:block!important;margin-top:7px!important;font-family:Arial,Helvetica,sans-serif;font-size:clamp(13px,3.1vw,18px)!important;font-weight:700!important;color:#222!important;animation:captionIn .65s 1.85s ease-out both!important}
+.brand-company span{font-family:Georgia,serif!important;color:#1689ce!important;font-size:1.08em}
+.brand-divider,.brand-transport{display:none!important}
+.splash-loading-dots{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:54px;opacity:0;animation:captionIn .45s 2.35s ease-out forwards}
+.splash-loading-dots i{display:block;width:9px;height:9px;border-radius:50%;background:#8fc8f2;animation:dotPulse 1s ease-in-out infinite}
+.splash-loading-dots i:nth-child(1){animation-delay:0s;background:#1689ce}
+.splash-loading-dots i:nth-child(2){animation-delay:.15s}
+.splash-loading-dots i:nth-child(3){animation-delay:.3s}
+.splash-loading-dots i:nth-child(4){animation-delay:.45s}
+.splash-waves{height:24vh!important;opacity:.9!important}
+.splash-waves:before{height:125px!important;bottom:-50px!important;background:linear-gradient(170deg,rgba(75,174,244,.06),rgba(50,148,232,.2))!important;border-radius:50% 50% 0 0!important}
+.splash-waves:after{height:88px!important;bottom:-35px!important;background:linear-gradient(170deg,rgba(42,128,212,.06),rgba(80,177,243,.24))!important;border-radius:50% 50% 0 0!important}
+@keyframes dotPulse{0%,100%{transform:scale(.85);opacity:.55}50%{transform:scale(1.12);opacity:1}}
+@media(max-width:600px){.brand-tiles{transform:scale(.72)!important;margin-bottom:-9px!important}.splash-wordmark .wikas-custom-logo{width:72vw!important;max-width:390px!important}.brand-company{font-size:clamp(12px,3.5vw,16px)!important}.splash-loading-dots{margin-top:43px;gap:9px}}
